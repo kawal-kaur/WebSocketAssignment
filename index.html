@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>WebSockets with HTML5</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	  <div id="page-wrapper">
+		  <h1>Example of WebSockets</h1>
+
+		  <div id="status">Conecting to the app…</div>
+
+		  <ul id="messages"></ul>
+		<table>
+              		<tr>
+                  	<td>
+                      		<img src="https://img.flaticon.com/icons/png/512/194/194938.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" height="30vh" width="30vw"></img>
+                 	 </td>
+                  
+                  	<td id="mssg">
+                    <h4 > </h4>
+                </td>
+              </tr>
+          </table>
+		  <form id="form-msg" action="#" method="post">
+			  
+                          <textarea id="txtmsg" placeholder="Write your msg here!" onkeyup="return show()" required></textarea>
+			  <button type="submit">Send msg</button>
+			  <button type="button" id="close">Close connection</button>
+		  </form><br><br>
+<table style="width:100%">
+  <tr>
+    <th>Roll No.</th>
+    <th>Total words</th> 
+    <th>Total characters</th>
+    <th>Words/Minute</th>
+  </tr>
+  <tr>
+    <td> 101</td>
+    <td>20 </td>
+    <td>158</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td> 102</td>
+    <td>15</td>
+    <td>126</td>
+    <td>2</td>
+  </tr>
+   
+</table>
+	  </div>
+	  <script src="app.js"></script>
+  </body>
+</html>
